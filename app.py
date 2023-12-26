@@ -21,9 +21,9 @@ async def example_endpoint(background_tasks: BackgroundTasks):
 
 @app.post("/get_text")
 async def get_text(background_tasks: BackgroundTasks,prompt: str):
-    # text = TextGenerator.generate_text(prompt)
-    # background_tasks.add_task(write_log, "Get text endpoint was visited")
-    return {"message": "temp"}
+    text = TextGenerator.generate_text(prompt)
+    background_tasks.add_task(write_log, "Get text endpoint was visited")
+    return {"message": text}
 
 # OPTIONAL: Implement any necessary profanity checking or validation for the user prompts
 
