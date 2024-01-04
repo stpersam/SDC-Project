@@ -6,10 +6,10 @@ from PIL import Image
 ## make sure that the port of your app is set public
 #########################################
 
-url_user = "http://127.0.0.1:8000"
+url_user = "https://gc57pv84-8000.euw.devtunnels.ms"
 prompt = input("give me your prompt: ")
 
 url = f"{url_user}/get_text?prompt={prompt}"
-response = requests.post(url)
-print(response.text)
+response = requests.get(url)
+print(response)
 
