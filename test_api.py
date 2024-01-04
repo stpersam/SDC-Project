@@ -1,15 +1,14 @@
 import requests
-from time import sleep
-from PIL import Image
+import json
 
 #########################################
 ## make sure that the port of your app is set public
 #########################################
 
-url_user = "https://gc57pv84-8000.euw.devtunnels.ms"
+url_user = "https://didactic-trout-7r95vvq456j2p546-8000.app.github.dev" #url of forwarded port
 prompt = input("give me your prompt: ")
 
 url = f"{url_user}/get_text?prompt={prompt}"
 response = requests.get(url)
-print(response)
+print(json.loads(response.text)["text"])
 
