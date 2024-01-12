@@ -1,8 +1,8 @@
 import requests
 import json
 
-# Set the URL for the FastAPI application with the forwarded port
-url_user = "https://didactic-trout-7r95vvq456j2p546-8000.app.github.dev"
+# Prompt the user to input a url examp. https://didactic-trout-7r95vvq456j2p546-8000.app.github.dev
+url_user = input("give me your url: ")
 
 # Prompt the user to input a prompt
 prompt = input("give me your prompt: ")
