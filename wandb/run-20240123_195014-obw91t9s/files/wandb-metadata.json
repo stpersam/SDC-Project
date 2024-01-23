@@ -1,0 +1,49 @@
+{
+    "os": "Linux-6.2.0-1018-azure-x86_64-with-glibc2.31",
+    "python": "3.10.13",
+    "heartbeatAt": "2024-01-23T19:50:15.955868",
+    "startedAt": "2024-01-23T19:50:14.376575",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "test_model.ipynb",
+    "codePathLocal": "test_model.ipynb",
+    "git": {
+        "remote": "https://github.com/stpersam/SDC-Project",
+        "commit": "58a2db6045e7b2fe91d8a8e787cc16c1000c7467"
+    },
+    "email": "114435988+ds22m007@users.noreply.github.com",
+    "root": "/workspaces/SDC-Project",
+    "host": "codespaces-1766b7",
+    "username": "codespace",
+    "executable": "/home/codespace/.python/current/bin/python3",
+    "cpu_count": 1,
+    "cpu_count_logical": 2,
+    "cpu_freq": {
+        "current": 3109.4955,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3175.242,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3043.749,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 31.32598876953125,
+            "used": 19.065250396728516
+        }
+    },
+    "memory": {
+        "total": 7.744113922119141
+    }
+}

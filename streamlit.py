@@ -3,10 +3,9 @@ import requests
 
 def send_message(message, endpoint_url):
     # Make an API request to the endpoint with the user's message
-    response = requests.post(endpoint_url, json={'message': message})
-
+    response = requests.get(endpoint_url+"?prompt="+message,headers={"X-Github-Token":"ghu_u93GJomBYlWvPBD0XWuZjbDIfF1qOP04yshr"})
     # Extract and return the response text from the API
-    return response.json().get('response', 'Error: No response')
+    return response.json().get('text', 'Error: No response')
 
 # Streamlit app layout
 st.title('Chat Application')
